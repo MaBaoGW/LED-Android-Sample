@@ -1,6 +1,8 @@
 # LED-Android-Sample
 
-a simple led sample code to control led strip
+a simple led sample code to control led strip based on EVB 
+
+[https://github.com/MaBaoGW/NRF52-WS2812B-LEDController-EVB]
 
 
 `Scan BLE EVB`
