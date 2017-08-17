@@ -17,6 +17,10 @@ a simple led sample code to control led strip
 
 
 
+## Color Picker Library from
+[https://github.com/1gravity/Android-ColorPicker]
+
+
 
 ## EVB NRF52
 [https://github.com/MaBaoGW/NRF52-WS2812B-LEDController-EVB]
