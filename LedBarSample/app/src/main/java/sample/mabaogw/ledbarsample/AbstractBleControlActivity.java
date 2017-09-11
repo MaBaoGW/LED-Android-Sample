@@ -41,8 +41,8 @@ import java.util.List;
 import sample.mabaogw.ledbarsample.ble.BluetoothLeService;
 import sample.mabaogw.ledbarsample.ble.SampleGattAttributes;
 
-public abstract class AbstractBleLineControlActivity extends AppCompatActivity {
-    private final static String TAG = AbstractBleLineControlActivity.class.getSimpleName();
+public abstract class AbstractBleControlActivity extends AppCompatActivity {
+    private final static String TAG = AbstractBleControlActivity.class.getSimpleName();
 
     public static final String EXTRAS_DEVICE_NAME = "DEVICE_NAME";
     public static final String EXTRAS_DEVICE_ADDRESS = "DEVICE_ADDRESS";
@@ -303,7 +303,7 @@ public abstract class AbstractBleLineControlActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(String result) {
-            Toast.makeText(AbstractBleLineControlActivity.this, getString(R.string.ledsavedone), Toast.LENGTH_SHORT).show();
+            Toast.makeText(AbstractBleControlActivity.this, getString(R.string.ledsavedone), Toast.LENGTH_SHORT).show();
             finish();
         }
     }

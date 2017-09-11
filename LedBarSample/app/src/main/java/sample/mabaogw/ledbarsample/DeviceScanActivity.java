@@ -44,6 +44,8 @@ import java.util.ArrayList;
 import static android.content.ContentValues.TAG;
 
 public class DeviceScanActivity extends ListActivity {
+    private String BLEDeviceName="JJCLedEVBV1";
+
     private static final int REQUEST_ENABLE_BT = 1;
 
     // Stops scanning after 10 seconds.
@@ -218,8 +220,8 @@ public class DeviceScanActivity extends ListActivity {
 
         public void addDevice(BluetoothDevice device) {
             if (!mLeDevices.contains(device)) {
-                if(device.getName()!=null && device.getName().equalsIgnoreCase("MaBaoGW")) {
-                    Log.d(TAG, "device name = " + device.getName());
+                if(device.getName()!=null && device.getName().equalsIgnoreCase(BLEDeviceName)) {
+                    //Log.d(TAG, "device name = " + device.getName());
                     mLeDevices.add(device);
                 }
             }

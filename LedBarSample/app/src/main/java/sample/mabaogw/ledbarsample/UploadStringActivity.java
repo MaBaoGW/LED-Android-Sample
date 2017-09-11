@@ -42,7 +42,7 @@ import com.onegravity.colorpicker.SetColorPickerListenerEvent;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UploadStringActivity extends AbstractBleLineControlActivity implements ColorPickerListener {
+public class UploadStringActivity extends AbstractBleControlActivity implements ColorPickerListener {
     private final static String TAG = UploadStringActivity.class.getSimpleName();
     private Context context;
 
